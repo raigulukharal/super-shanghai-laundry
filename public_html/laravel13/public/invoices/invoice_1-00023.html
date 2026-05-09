@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Invoice #1-00023</title>
+            <style>
+                @media print { body { margin: 0; padding: 0; } .no-print { display: none; } }
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+                .invoice { max-width: 800px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); overflow: hidden; }
+                .header { background: linear-gradient(135deg, #1e3a8a, #1e40af); color: white; padding: 25px; text-align: center; }
+                .header h1 { font-size: 28px; margin-bottom: 5px; }
+                .body { padding: 25px; }
+                .customer-code { background: #eff6ff; padding: 12px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+                .customer-code .code { font-size: 18px; font-weight: bold; color: #1e3a8a; }
+                .info-grid { display: flex; justify-content: space-between; margin-bottom: 20px; gap: 15px; }
+                .info-box { background: #f9fafb; padding: 12px; border-radius: 8px; flex: 1; }
+                .info-box h4 { font-size: 11px; color: #6b7280; margin-bottom: 5px; text-transform: uppercase; }
+                .info-box p { font-size: 14px; font-weight: 600; }
+                table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+                th { background: #f9fafb; padding: 10px; text-align: left; font-size: 12px; font-weight: 600; border-bottom: 1px solid #e5e7eb; }
+                td { padding: 10px; border-bottom: 1px solid #e5e7eb; font-size: 13px; }
+                .totals { text-align: right; margin-top: 20px; padding-top: 20px; border-top: 2px solid #e5e7eb; }
+                .grand-total { font-size: 18px; font-weight: bold; color: #1e3a8a; margin-top: 10px; }
+                .footer { background: #f9fafb; padding: 15px; text-align: center; font-size: 11px; color: #6b7280; }
+                .btn-print { background: #1e3a8a; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-bottom: 15px; }
+            </style>
+        </head>
+        <body>
+            <div style="text-align: center;" class="no-print">
+                <button onclick="window.print()" class="btn-print">🖨️ Print / Save as PDF</button>
+                <p style="font-size: 12px; margin-top: 5px;">Press Ctrl+P or click above to save as PDF</p>
+            </div>
+            
+            <div class="invoice">
+                <div class="header">
+                    <h1>SSDC LAUNDRY SYSTEM</h1>
+                    <p>123 Main Street, Karachi | Tel: +92 300 1234567</p>
+                </div>
+                
+                <div class="body">
+                    <div class="customer-code">
+                        📌 Customer Code: <span class="code">Code123</span>
+                    </div>
+                    
+                    <div class="info-grid">
+                        <div class="info-box"><h4>Invoice #</h4><p>1-00023</p><p style="font-size:12px;">Date: 27-04-2026</p></div>
+                        <div class="info-box"><h4>Customer</h4><p>Gulfam Shair</p><p style="font-size:12px;">📱 03021199258</p></div>
+                        <div class="info-box"><h4>Delivery</h4><p>Delivered</p><p style="font-size:12px;">Expected: 2026-04-27</p></div>
+                    </div>
+                    
+                    <table>
+                        <thead><tr><th>#</th><th>Item</th><th>Color</th><th style="text-align:center">Qty</th><th style="text-align:right">Price</th><th style="text-align:right">Total</th></tr></thead>
+                        <tbody><tr>
+                <td>1</td>
+                <td><strong>Pent Coat</strong></td>
+                <td>Maroon</td>
+                <td style="text-align:center">2</td>
+                <td style="text-align:right">Rs. 350.00</td>
+                <td style="text-align:right">Rs. 700.00</td>
+            </tr><tr>
+                <td>2</td>
+                <td><strong>Jacket</strong></td>
+                <td>Green</td>
+                <td style="text-align:center">1</td>
+                <td style="text-align:right">Rs. 500.00</td>
+                <td style="text-align:right">Rs. 500.00</td>
+            </tr></tbody></table>
+                    <div class="totals">
+                        <p>Subtotal: Rs. 1,200.00</p><p>Other Charges: + Rs. 100.00</p><p class="grand-total">Grand Total: Rs. 1,300.00</p>
+                        <p>Paid: Rs. 1,300.00</p><p style="color:#10b981;">✓ Fully Paid</p></div><div style="background:#fefce8; padding:12px; margin-top:20px; border-radius:8px;"><strong>📝 Notes:</strong><br>test it</div></div>
+                <div class="footer">
+                    <p>Thank you for choosing SSDC Laundry!</p>
+                    <p>For queries: support@ssdc.shop | +92 300 1234567</p>
+                </div>
+            </div>
+        </body>
+        </html>
