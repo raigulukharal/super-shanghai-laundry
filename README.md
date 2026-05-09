@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.icons8.com/color/96/000000/laundry.png" alt="Logo" width="80">
+
 
 # 🧺 Super Shanghai Dry Cleaners
 
